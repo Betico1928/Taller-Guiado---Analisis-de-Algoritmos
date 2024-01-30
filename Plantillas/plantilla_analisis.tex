@@ -1,0 +1,131 @@
+%% LyX 2.3.6.1 created this file.  For more info, see http://www.lyx.org/.
+%% Do not edit unless you really know what you are doing.
+\documentclass[spanish,english]{article}
+\usepackage[T1]{fontenc}
+\usepackage[latin9]{inputenc}
+\usepackage{float}
+\usepackage{amsmath}
+\usepackage{amsthm}
+\PassOptionsToPackage{normalem}{ulem}
+\usepackage{ulem}
+
+\makeatletter
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% LyX specific LaTeX commands.
+\newcommand{\noun}[1]{\textsc{#1}}
+\floatstyle{ruled}
+\newfloat{algorithm}{tbp}{loa}
+\providecommand{\algorithmname}{Algorithm}
+\floatname{algorithm}{\protect\algorithmname}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% Textclass specific LaTeX commands.
+\numberwithin{equation}{section}
+\numberwithin{figure}{section}
+\theoremstyle{definition}
+\newtheorem*{defn*}{\protect\definitionname}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%% User specified LaTeX commands.
+\usepackage{xmpmulti}
+\usepackage{algorithm,algpseudocode}
+
+\makeatother
+
+\usepackage{babel}
+\addto\shorthandsspanish{\spanishdeactivate{~<>}}
+
+\addto\captionsenglish{\renewcommand{\definitionname}{Definition}}
+\addto\captionsspanish{\renewcommand{\algorithmname}{Algoritmo}}
+\addto\captionsspanish{\renewcommand{\definitionname}{Definición}}
+\providecommand{\definitionname}{Definition}
+
+\begin{document}
+\title{\selectlanguage{spanish}%
+Problema <<>>}
+\author{\selectlanguage{spanish}%
+Autor1, Autor2, Autor3}
+\date{\selectlanguage{spanish}%
+\today}
+\maketitle
+\begin{abstract}
+En este documento se presenta el análisis del algoritmo ...., .
+\end{abstract}
+
+\part{Análisis y diseño del problema}
+
+\section{Análisis}
+
+El problema, informalmente, se puede describir como: ...
+
+\section{Diseño}
+
+Con las observaciones presentadas en el análisis anterior, podemos
+escribir el diseño de un algoritmo que solucione el problema . A veces
+este diseño se conoce como el <<contrato>> del algoritmmos o las
+<<precondiciones>> y <<poscondiciones>> del algoritmo. El diseño
+se compone de entradas y salidas:
+\begin{defn*}
+Entradas:
+\end{defn*}
+\selectlanguage{english}%
+\begin{enumerate}
+\item Definición entrada 1
+\item Definición entrada 2
+\end{enumerate}
+\selectlanguage{spanish}%
+~~~~
+\begin{defn*}
+Salidas:
+\end{defn*}
+\begin{enumerate}
+\item Definición salida 1
+\item Definición salida 2
+\end{enumerate}
+~~~~~
+
+\part{Algoritmos}
+
+\section{Opción algoritmo 1}
+
+\subsection{Algoritmo}
+
+Este algoritmo se basa en ...
+
+\begin{algorithm}
+\begin{algorithmic}[1]
+
+\Procedure{ALG}{$S$}
+
+  \State$n\leftarrow|S|$
+
+\For{$a\leftarrow1$ $\mathbf{to}$ $n$}
+
+\State$b\leftarrow x^{a}$
+
+\EndFor
+
+  \State\Return{$b$}
+
+\EndProcedure
+
+\end{algorithmic}
+
+\caption{\foreignlanguage{english}{Nombre}}
+\end{algorithm}
+
+
+\subsection{Complejidad}
+
+El algoritmo \noun{X} tiene órden de complejidad . ¿Por qué?
+
+\subsection{Invariante}
+\begin{itemize}
+\item \textbf{\uline{Inicio}}: 
+\item \textbf{\uline{Avance}}: 
+\item \textbf{\uline{Terminación}}
+\end{itemize}
+
+\subsection{Notas de implementación}
+
+\part{Comparación de los algoritmos}\selectlanguage{english}%
+
+\end{document}
