@@ -838,6 +838,57 @@ El proceso continua hasta que
 Notas de implementación
 \end_layout
 
+\begin_layout Section
+
+\lang spanish
+Opción algoritmo 2 - Insertion Sort
+\end_layout
+
+\begin_layout Subsection
+
+\lang spanish
+Algoritmo
+\end_layout
+
+\begin_layout Standard
+Este algoritmo se basa en el principio de iterar sobre una lista 
+\begin_inset Formula $S$
+\end_inset
+
+ de 
+\begin_inset Formula $n$
+\end_inset
+
+ elementos, donde 
+\begin_inset Formula $n=\left|S\right|$
+\end_inset
+
+.
+ La idea es que este algorimo empiece desde el segundo elemento 
+\begin_inset Formula $(i=1)$
+\end_inset
+
+ y que en cada iteración se compare 
+\begin_inset Formula $S\left[i\right]$
+\end_inset
+
+ con los elementos anteriores (es decir, 
+\begin_inset Formula $S\left[i-1\right],S\left[i-2\right],$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+lo compare con los elementos anteriores (los que se encuentren a su derecha),
+ desplazandolos a su derecha mientras que 
+\begin_inset Formula $S\left[i\right]$
+\end_inset
+
+ sea menor.
+ 
+\end_layout
+
 \begin_layout Part
 
 \lang spanish
