@@ -1593,6 +1593,478 @@ Lorem ipsum dolor sit amet, consectetur adipiscing elit.
  Curabitur a felis libero.
 \end_layout
 
+\begin_layout Section
+
+\lang spanish
+Opción algoritmo 3 - Quick Sort
+\end_layout
+
+\begin_layout Subsection
+
+\lang spanish
+Algortimo
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+El algoritmo de QuickSort consiste en organizar una lista 
+\begin_inset Formula $S$
+\end_inset
+
+.
+ Inicialmente el algoritmo selecciona un elementos comúnmente llamado 
+\begin_inset Formula $"pivot"$
+\end_inset
+
+ de la lista, particionando los demás elementos en dos sublistas: aquella
+ que contiene los elementos que son menores al pivot 
+\begin_inset Formula $\mathit{(S_{1}=\{x\in S|x<pivot\})}$
+\end_inset
+
+ y aquellos elementos que son mayores 
+\begin_inset Formula $\mathit{(S_{1}=\{x\in S|x>pivot\})}$
+\end_inset
+
+.
+ Este enfoque divide la tarea en subproblemas más pequeños y se combina
+ para lograr la ordenación completa.
+ Se aplica el mismo proceso de manera recursiva a ambas sublistas, seleccionando
+ nuevos pivotes y dividiéndolas hasta que toda la lista esté ordenada.
+ El éxito de QuickSort radica en la elección eficiente del pivot y la partición
+ de la lista en torno a él, reduciendo así el problema original en subproblemas
+ más pequeños.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+El paso clave es la elección del pivot y la partición de la lista en torno
+ a él.
+ Un pivot bien elegido mejora el rendimiento del algoritmo.
+ QuickSort es eficiente en la práctica y a menudo supera a otros algoritmos
+ de ordenamiento como Merge Sort debido a su menor número de intercambios.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Float algorithm
+wide false
+sideways false
+status open
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+begin{algorithmic}[1]
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Procedure
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+QuickSort
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $S,inicio,fin$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+  
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $n\leftarrow|S|$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+For
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $i\leftarrow2$
+\end_inset
+
+ 
+\begin_inset Formula $\mathbf{to}$
+\end_inset
+
+ 
+\begin_inset Formula $n$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $key=S[i]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $j=i-1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+While
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $j>0$
+\end_inset
+
+ 
+\begin_inset Formula $and$
+\end_inset
+
+ 
+\begin_inset Formula $S[j]>key$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $S[j+1]=S[j]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $j=j+1$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+EndWhile
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $S\left[j+1\right]=key$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+EndFor
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+EndProcedure
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+end{algorithmic}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset Caption Standard
+
+\begin_layout Plain Layout
+QuickSort
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Part
 
 \lang spanish
