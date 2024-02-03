@@ -1367,6 +1367,27 @@ InsertionSort
 Complejidad
 \end_layout
 
+\begin_layout Standard
+
+\lang spanish
+La complejidad del algoritmos de Insertion Sort es de 
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+, lo que significa que el tiempo de ejecución crece cuadráticamente con
+ el tamaño de la lista.
+ En el peor caso, donde la lista está en orden descendente, cada elemento
+ requiere comparaciones y desplazamientos en cada iteración, resultando
+ en aproximadamente 
+\begin_inset Formula $\frac{n^{2}}{2}$
+\end_inset
+
+ operaciones.
+ Aunque es eficiente para listas pequeñas o casi ordenadas, Insertion Sort
+ puede volverse ineficiente para conjuntos de datos más grandes debido a
+ su complejidad cuadrática.
+\end_layout
+
 \begin_layout Part
 
 \lang spanish
