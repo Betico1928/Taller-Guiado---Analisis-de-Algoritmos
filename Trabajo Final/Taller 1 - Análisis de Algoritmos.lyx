@@ -480,7 +480,7 @@ status open
 \end_inset
 
 
-\begin_inset Formula $i\leftarrow0$
+\begin_inset Formula $i\leftarrow1$
 \end_inset
 
  
@@ -488,7 +488,7 @@ status open
 \end_inset
 
  
-\begin_inset Formula $n-1$
+\begin_inset Formula $n$
 \end_inset
 
 
@@ -532,7 +532,7 @@ status open
 \end_inset
 
 
-\begin_inset Formula $j\leftarrow0$
+\begin_inset Formula $j\leftarrow1$
 \end_inset
 
  
@@ -540,7 +540,7 @@ status open
 \end_inset
 
  
-\begin_inset Formula $n-i-1$
+\begin_inset Formula $n-i$
 \end_inset
 
 
@@ -616,8 +616,52 @@ State
 
 \end_inset
 
- swap 
-\begin_inset Formula $S\left[j\right],S\left[j+1\right]$
+
+\begin_inset Formula $variableTemporal=S[j]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $S\left[j\right]=S\left[j+1\right]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $S\left[j+1\right]=variableTemporal$
 \end_inset
 
 
