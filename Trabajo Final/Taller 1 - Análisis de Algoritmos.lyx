@@ -888,6 +888,59 @@ El proceso continua hasta que
 Notas de implementación
 \end_layout
 
+\begin_layout Standard
+
+\lang spanish
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Cras porta facilisis ultricies.
+ Donec in posuere lacus.
+ Maecenas volutpat augue ac tincidunt accumsan.
+ In in rhoncus mi, sodales finibus augue.
+ Nulla tristique in est nec elementum.
+ Sed purus sem, lacinia eget turpis ut, dapibus rutrum felis.
+ Sed efficitur venenatis mauris at gravida.
+ Nulla finibus rutrum elit eu rutrum.
+ Curabitur a felis libero.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Praesent lacus est, finibus et elementum nec, convallis sed est.
+ Cras fermentum laoreet eros sagittis fermentum.
+ Donec id augue eget ante pellentesque feugiat et et nisi.
+ Ut ornare feugiat tempus.
+ Sed iaculis eros nec libero ultrices, vel efficitur tortor imperdiet.
+ Aliquam tristique, sapien a commodo rhoncus, neque leo dapibus massa, ac
+ ultrices felis tortor in ex.
+ Donec ac risus libero.
+ Fusce rhoncus diam leo, ornare pellentesque lectus sodales vel.
+ Proin scelerisque porttitor elit, nec suscipit erat vestibulum eget.
+ Proin hendrerit, arcu eget faucibus pharetra, urna nisi euismod quam, ac
+ maximus lacus urna in ante.
+ Etiam sit amet semper augue.
+ Donec in ultrices ipsum, tristique maximus odio.
+ Proin volutpat, quam mattis dictum lobortis, lorem velit rhoncus metus,
+ sit amet iaculis tellus ligula quis est.
+ Fusce interdum eros ex, et feugiat est euismod et.
+ Cras non efficitur neque.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Cras porta facilisis ultricies.
+ Donec in posuere lacus.
+ Maecenas volutpat augue ac tincidunt accumsan.
+ In in rhoncus mi, sodales finibus augue.
+ Nulla tristique in est nec elementum.
+ Sed purus sem, lacinia eget turpis ut, dapibus rutrum felis.
+ Sed efficitur venenatis mauris at gravida.
+ Nulla finibus rutrum elit eu rutrum.
+ Curabitur a felis libero.
+\end_layout
+
 \begin_layout Section
 
 \lang spanish
@@ -1386,6 +1439,158 @@ La complejidad del algoritmos de Insertion Sort es de
  Aunque es eficiente para listas pequeñas o casi ordenadas, Insertion Sort
  puede volverse ineficiente para conjuntos de datos más grandes debido a
  su complejidad cuadrática.
+\end_layout
+
+\begin_layout Subsection
+
+\lang spanish
+Invariante
+\end_layout
+
+\begin_layout Standard
+Después de cada iteración del bucle externo, la sublista que va desde el
+ inicio de la lista hasta el índice actual 
+\begin_inset Formula $S[1:i\text{]}$
+\end_inset
+
+ está ordenada.
+ Esto implica que los elementos en la sublista ya están en sus posiciones
+ finales correctas en el contexto de la lista completa.
+ El algoritmo, en cada paso, inserta el elemento actual en su posición correcta,
+ desplazando los elementos mayores a la derecha para mantener la ordenación.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\bar under
+\lang spanish
+Inicio
+\series default
+\bar default
+: Antes de iniciar el bucle externo, la sublista inicial 
+\begin_inset Formula $S[1:1]$
+\end_inset
+
+ consiste en un solo elemento, y por lo tanto, está trivialmente ordenada.
+ El invariante se cumple inicialmente, ya que no hay elementos previos para
+ comparar.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\bar under
+\lang spanish
+Avance
+\series default
+\bar default
+: Durante cada iteración del bucle externo, el algoritmo selecciona un nuevo
+ elemento 
+\begin_inset Formula $S[i]$
+\end_inset
+
+y lo compara con los elementos anteriores 
+\lang english
+(es decir, 
+\begin_inset Formula $S\left[i-1\right],S\left[i-2\right],\ldots$
+\end_inset
+
+).
+
+\lang spanish
+ El bucle interno desplaza los elementos mayores hacia la derecha, creando
+ espacio para insertar 
+\begin_inset Formula $S[i]$
+\end_inset
+
+ en su posición correcta.
+ Al finalizar la iteración, la sublista 
+\begin_inset Formula $S[1:i]$
+\end_inset
+
+ está ordenada, cumpliendo así el invariante.
+ El avance garantiza que, después de cada iteración, la porción de la lista
+ considerada hasta el momento sigue estando en orden.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\bar under
+\lang spanish
+Terminación: 
+\series default
+\bar default
+Cuando el bucle externo ha recorrido toda la lista, la sublista completa
+ 
+\begin_inset Formula $S[1:n]$
+\end_inset
+
+ está ordenada.
+ El invariante se mantiene hasta el final del proceso, asegurando que, en
+ cada paso del bucle externo, la sublista parcial se mantenga ordenada.
+ Por lo tanto, al terminar, el invariante garantiza que la lista completa
+ esté ordenada.
+\end_layout
+
+\begin_layout Subsection
+
+\lang spanish
+Notas de implementación
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Cras porta facilisis ultricies.
+ Donec in posuere lacus.
+ Maecenas volutpat augue ac tincidunt accumsan.
+ In in rhoncus mi, sodales finibus augue.
+ Nulla tristique in est nec elementum.
+ Sed purus sem, lacinia eget turpis ut, dapibus rutrum felis.
+ Sed efficitur venenatis mauris at gravida.
+ Nulla finibus rutrum elit eu rutrum.
+ Curabitur a felis libero.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Praesent lacus est, finibus et elementum nec, convallis sed est.
+ Cras fermentum laoreet eros sagittis fermentum.
+ Donec id augue eget ante pellentesque feugiat et et nisi.
+ Ut ornare feugiat tempus.
+ Sed iaculis eros nec libero ultrices, vel efficitur tortor imperdiet.
+ Aliquam tristique, sapien a commodo rhoncus, neque leo dapibus massa, ac
+ ultrices felis tortor in ex.
+ Donec ac risus libero.
+ Fusce rhoncus diam leo, ornare pellentesque lectus sodales vel.
+ Proin scelerisque porttitor elit, nec suscipit erat vestibulum eget.
+ Proin hendrerit, arcu eget faucibus pharetra, urna nisi euismod quam, ac
+ maximus lacus urna in ante.
+ Etiam sit amet semper augue.
+ Donec in ultrices ipsum, tristique maximus odio.
+ Proin volutpat, quam mattis dictum lobortis, lorem velit rhoncus metus,
+ sit amet iaculis tellus ligula quis est.
+ Fusce interdum eros ex, et feugiat est euismod et.
+ Cras non efficitur neque.
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+ Cras porta facilisis ultricies.
+ Donec in posuere lacus.
+ Maecenas volutpat augue ac tincidunt accumsan.
+ In in rhoncus mi, sodales finibus augue.
+ Nulla tristique in est nec elementum.
+ Sed purus sem, lacinia eget turpis ut, dapibus rutrum felis.
+ Sed efficitur venenatis mauris at gravida.
+ Nulla finibus rutrum elit eu rutrum.
+ Curabitur a felis libero.
 \end_layout
 
 \begin_layout Part

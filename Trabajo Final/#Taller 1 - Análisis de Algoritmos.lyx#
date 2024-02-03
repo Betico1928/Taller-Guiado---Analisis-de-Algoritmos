@@ -1383,7 +1383,28 @@ La complejidad del algoritmos de Insertion Sort es de
 \end_inset
 
  operaciones.
- 
+ Aunque es eficiente para listas pequeñas o casi ordenadas, Insertion Sort
+ puede volverse ineficiente para conjuntos de datos más grandes debido a
+ su complejidad cuadrática.
+\end_layout
+
+\begin_layout Subsection
+
+\lang spanish
+Invariante
+\end_layout
+
+\begin_layout Standard
+Después de cada iteración del bucle externo, la sublista que va desde el
+ inicio de la lista hasta el índice actual 
+\begin_inset Formula $S[1:i\text{]}$
+\end_inset
+
+ está ordenada.
+ Esto implica que los elementos en la sublista ya están en sus posiciones
+ finales correctas en el contexto de la lista completa.
+ El algoritmo, en cada paso, inserta el elemento actual en su posición correcta,
+ desplazando los elementos mayores a la derecha para mantener la ordenación.
 \end_layout
 
 \begin_layout Part
