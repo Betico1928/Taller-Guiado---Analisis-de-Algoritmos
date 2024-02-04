@@ -1746,6 +1746,50 @@ status open
 
 \begin_layout Plain Layout
 
+
+\backslash
+If
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $inicio<fin$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
   
 \backslash
 State
@@ -1754,7 +1798,215 @@ State
 \end_inset
 
 
-\begin_inset Formula $n\leftarrow|S|$
+\begin_inset Formula $pivotIndex=particion(S,inicio,fin)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+  
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+  
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $QuickSort(S,inicio,pivotIndex-1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+  
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $QuickSort(S,pivotIndex+1,fin)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+EndIf
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+EndProcedure
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Procedure
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+particion
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $S,inicio,fin$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $pivot=S[fin]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $pivotIndex=inicio-1$
 \end_inset
 
 
@@ -1787,7 +2039,7 @@ status open
 \end_inset
 
 
-\begin_inset Formula $i\leftarrow2$
+\begin_inset Formula $i\leftarrow inicio$
 \end_inset
 
  
@@ -1795,7 +2047,7 @@ status open
 \end_inset
 
  
-\begin_inset Formula $n$
+\begin_inset Formula $fin-1$
 \end_inset
 
 
@@ -1822,51 +2074,7 @@ status open
 
 
 \backslash
-State
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula $key=S[i]$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\lang spanish
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-State
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula $j=i-1$
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\lang spanish
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-While
+If
 \end_layout
 
 \end_inset
@@ -1883,15 +2091,7 @@ status open
 \end_inset
 
 
-\begin_inset Formula $j>0$
-\end_inset
-
- 
-\begin_inset Formula $and$
-\end_inset
-
- 
-\begin_inset Formula $S[j]>key$
+\begin_inset Formula $S[i]\leq pivot$
 \end_inset
 
 
@@ -1924,7 +2124,7 @@ State
 \end_inset
 
 
-\begin_inset Formula $S[j+1]=S[j]$
+\begin_inset Formula $pivotIndex=pivotIndex+1$
 \end_inset
 
 
@@ -1946,7 +2146,7 @@ State
 \end_inset
 
 
-\begin_inset Formula $j=j+1$
+\begin_inset Formula $intercambio(S,pivotIndex,i)$
 \end_inset
 
 
@@ -1962,31 +2162,9 @@ status open
 
 
 \backslash
-EndWhile
+EndIf
 \end_layout
 
-\end_inset
-
-
-\end_layout
-
-\begin_layout Plain Layout
-
-\lang spanish
-\begin_inset ERT
-status open
-
-\begin_layout Plain Layout
-
-
-\backslash
-State
-\end_layout
-
-\end_inset
-
-
-\begin_inset Formula $S\left[j+1\right]=key$
 \end_inset
 
 
@@ -2005,6 +2183,200 @@ status open
 EndFor
 \end_layout
 
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $intercambio(S,pivotIndex+1,fin)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $return(pivotIndex+1)$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+EndProcedure
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+Procedure
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+intercambiar
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+{
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $S,i,j$
+\end_inset
+
+
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+}
+\end_layout
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $temp=S[i]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $S[i]=S[j]$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Plain Layout
+
+\lang spanish
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+State
+\end_layout
+
+\end_inset
+
+
+\begin_inset Formula $S[j]=temp$
 \end_inset
 
 
