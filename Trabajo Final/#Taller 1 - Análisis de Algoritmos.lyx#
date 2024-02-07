@@ -288,13 +288,11 @@ Salidas:
 \begin_inset Formula $a'_{i}\leq a'_{i+1}$
 \end_inset
 
+ y 
+\begin_inset Formula $a'_{i}\in S$
+\end_inset
 
-\end_layout
-
-\begin_layout Enumerate
-
-\lang spanish
-Definición salida 2
+.
 \end_layout
 
 \begin_layout Standard
@@ -361,6 +359,10 @@ rotan
 
  para que estos vayan siendo ordenados.
  
+\end_layout
+
+\begin_layout Standard
+En el algoritmo 1 se puede encontrar la implementación de este algoritmo.
 \end_layout
 
 \begin_layout Standard
@@ -915,54 +917,21 @@ Notas de implementación
 \begin_layout Standard
 
 \lang spanish
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Cras porta facilisis ultricies.
- Donec in posuere lacus.
- Maecenas volutpat augue ac tincidunt accumsan.
- In in rhoncus mi, sodales finibus augue.
- Nulla tristique in est nec elementum.
- Sed purus sem, lacinia eget turpis ut, dapibus rutrum felis.
- Sed efficitur venenatis mauris at gravida.
- Nulla finibus rutrum elit eu rutrum.
- Curabitur a felis libero.
+Para la implementación de este algoritmo se hizo uso del lenguaje interpretado
+ Python.
+ En este caso, se nos brindó dicho código que fue escrito por el profesor
+ Leonardo Florez El código para este algoritmo se ubica en la carpeta 
+\begin_inset Formula $‘Código/Taller1–Análisisdealgoritmos/sort/bubble_{s}ort.py’$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 
 \lang spanish
-Praesent lacus est, finibus et elementum nec, convallis sed est.
- Cras fermentum laoreet eros sagittis fermentum.
- Donec id augue eget ante pellentesque feugiat et et nisi.
- Ut ornare feugiat tempus.
- Sed iaculis eros nec libero ultrices, vel efficitur tortor imperdiet.
- Aliquam tristique, sapien a commodo rhoncus, neque leo dapibus massa, ac
- ultrices felis tortor in ex.
- Donec ac risus libero.
- Fusce rhoncus diam leo, ornare pellentesque lectus sodales vel.
- Proin scelerisque porttitor elit, nec suscipit erat vestibulum eget.
- Proin hendrerit, arcu eget faucibus pharetra, urna nisi euismod quam, ac
- maximus lacus urna in ante.
- Etiam sit amet semper augue.
- Donec in ultrices ipsum, tristique maximus odio.
- Proin volutpat, quam mattis dictum lobortis, lorem velit rhoncus metus,
- sit amet iaculis tellus ligula quis est.
- Fusce interdum eros ex, et feugiat est euismod et.
- Cras non efficitur neque.
-\end_layout
-
-\begin_layout Standard
-
-\lang spanish
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Cras porta facilisis ultricies.
- Donec in posuere lacus.
- Maecenas volutpat augue ac tincidunt accumsan.
- In in rhoncus mi, sodales finibus augue.
- Nulla tristique in est nec elementum.
- Sed purus sem, lacinia eget turpis ut, dapibus rutrum felis.
- Sed efficitur venenatis mauris at gravida.
- Nulla finibus rutrum elit eu rutrum.
- Curabitur a felis libero.
+La implementación se encuentra entre la línea 11 y la 15.
+ 
 \end_layout
 
 \begin_layout Section
@@ -1017,6 +986,10 @@ Este algoritmo se basa en el principio de iterar sobre una lista
 \end_inset
 
  esté ordenada después de cada iteración.
+\end_layout
+
+\begin_layout Standard
+En el algoritmo 2 se puede encontrar la implementación de este algoritmo.
 \end_layout
 
 \begin_layout Standard
@@ -1567,54 +1540,22 @@ Notas de implementación
 \begin_layout Standard
 
 \lang spanish
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Cras porta facilisis ultricies.
- Donec in posuere lacus.
- Maecenas volutpat augue ac tincidunt accumsan.
- In in rhoncus mi, sodales finibus augue.
- Nulla tristique in est nec elementum.
- Sed purus sem, lacinia eget turpis ut, dapibus rutrum felis.
- Sed efficitur venenatis mauris at gravida.
- Nulla finibus rutrum elit eu rutrum.
- Curabitur a felis libero.
+Para la implementación de este algoritmo se hizo uso del lenguaje interpretado
+ Python.
+ En este caso, se nos brindó dicho código que fue escrito por el profesor
+ Leonardo Florez El código para este algoritmo se ubica en la carpeta 
+\begin_inset Formula $‘Código/Taller1–Análisisdealgoritmos/sort/insertion_{s}ort.py’$
+\end_inset
+
+.
+ 
 \end_layout
 
 \begin_layout Standard
 
 \lang spanish
-Praesent lacus est, finibus et elementum nec, convallis sed est.
- Cras fermentum laoreet eros sagittis fermentum.
- Donec id augue eget ante pellentesque feugiat et et nisi.
- Ut ornare feugiat tempus.
- Sed iaculis eros nec libero ultrices, vel efficitur tortor imperdiet.
- Aliquam tristique, sapien a commodo rhoncus, neque leo dapibus massa, ac
- ultrices felis tortor in ex.
- Donec ac risus libero.
- Fusce rhoncus diam leo, ornare pellentesque lectus sodales vel.
- Proin scelerisque porttitor elit, nec suscipit erat vestibulum eget.
- Proin hendrerit, arcu eget faucibus pharetra, urna nisi euismod quam, ac
- maximus lacus urna in ante.
- Etiam sit amet semper augue.
- Donec in ultrices ipsum, tristique maximus odio.
- Proin volutpat, quam mattis dictum lobortis, lorem velit rhoncus metus,
- sit amet iaculis tellus ligula quis est.
- Fusce interdum eros ex, et feugiat est euismod et.
- Cras non efficitur neque.
-\end_layout
-
-\begin_layout Standard
-
-\lang spanish
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Cras porta facilisis ultricies.
- Donec in posuere lacus.
- Maecenas volutpat augue ac tincidunt accumsan.
- In in rhoncus mi, sodales finibus augue.
- Nulla tristique in est nec elementum.
- Sed purus sem, lacinia eget turpis ut, dapibus rutrum felis.
- Sed efficitur venenatis mauris at gravida.
- Nulla finibus rutrum elit eu rutrum.
- Curabitur a felis libero.
+La implementación se encuentra entre la línea 11 y la 19.
+ 
 \end_layout
 
 \begin_layout Section
@@ -1668,6 +1609,10 @@ El paso clave es la elección del pivot y la partición de la lista en torno
  Un pivot bien elegido mejora el rendimiento del algoritmo.
  QuickSort es eficiente en la práctica y a menudo supera a otros algoritmos
  de ordenamiento como Merge Sort debido a su menor número de intercambios.
+\end_layout
+
+\begin_layout Standard
+En el algoritmo 3 se puede encontrar la implementación de este algoritmo.
 \end_layout
 
 \begin_layout Standard
@@ -2465,12 +2410,161 @@ QuickSort
 Complejidad
 \end_layout
 
+\begin_layout Standard
+Inicialmente tenemos que encontrar las complejidades de las funciones auxiliares.
+ La función 
+\begin_inset Quotes eld
+\end_inset
+
+particion
+\begin_inset Quotes erd
+\end_inset
+
+ es de complejidad 
+\begin_inset Formula $O(n)$
+\end_inset
+
+.
+ Esta complejidad es posible encontrarla gracias al método de inspección.
+ Por otro lado la función 
+\begin_inset Quotes eld
+\end_inset
+
+intercambiar
+\begin_inset Quotes erd
+\end_inset
+
+ es de complejidad 
+\begin_inset Formula $O(1)$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Standard
+Siguiendo con el análisis, para encontrar la complejidad de el algoritmo
+ en general haremos uso de el teorema maestro.
+ 
+\end_layout
+
+\begin_layout Subsubsection
+Mejor Caso
+\end_layout
+
+\begin_layout Standard
+Este algoritmo cuenta con la siguiente función de recurrencia: 
+\begin_inset Formula 
+\[
+T(n)=2T(\frac{n}{2})+n
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Usando el teorema maestro se sigue el siguiente procedimiento:
+\end_layout
+
+\begin_layout Itemize
+Encontrar el 
+\begin_inset Formula $C_{critico}$
+\end_inset
+
+: 
+\begin_inset Formula 
+\[
+log_{2}2=1
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Itemize
+Encontrar usando las fórmulas para este caso (Caso #2:
+\begin_inset Formula 
+\[
+f(n)\in\theta(n^{log_{2}2}log_{2}^{0}n)\Longrightarrow f(n)\in\theta(n^{log_{2}2}log_{2}^{0+1}n)
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+f(n)\in\theta(n)\Longrightarrow fn(n)\in\theta(n*log_{2}n)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Subsubsection
+Peor Caso
+\end_layout
+
+\begin_layout Standard
+Este peor caso se da cuando el algoritmo se divide en 2 subsecciónes en
+ donde una es de tamaño 
+\begin_inset Formula $S'=1$
+\end_inset
+
+ y la otra es de tamaño 
+\begin_inset Formula $S'=n-1$
+\end_inset
+
+.
+ Esto tendria que repetirse todas las veces, quedando subsecciones de tamaño
+ 
+\begin_inset Formula $n-2,n-3,n-4,\ldots$
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Teniendo en cuenta ese contexto podemos concluir que la función de recurrencia
+ es la siguiente:
+\end_layout
+
+\begin_layout Standard
+\begin_inset Formula 
+\[
+T(n)=2T(n-1)+O(n)\Longrightarrow O(n^{2}
+\]
+
+\end_inset
+
+
+\end_layout
+
 \begin_layout Subsection
 Invariante
 \end_layout
 
 \begin_layout Subsection
 Notas de Implementación
+\end_layout
+
+\begin_layout Standard
+Para la implementación de este algoritmo se hizo uso del lenguaje interpretado
+ Python.
+ En este caso, se nos brindó dicho código que fue escrito por el profesor
+ Leonardo Flórez El código para este algoritmo se ubica en la carpeta 
+\begin_inset Formula $‘Código/Taller1–Análisisdealgoritmos/sort/quicksort.py’$
+\end_inset
+
+.
+ 
+\end_layout
+
+\begin_layout Standard
+La implementación se encuentra entre la línea 12 y la 22.
+ 
 \end_layout
 
 \begin_layout Part
