@@ -227,11 +227,28 @@ Entradas:
 \end_layout
 
 \begin_layout Enumerate
-Definición entrada 1
-\end_layout
 
-\begin_layout Enumerate
-Definición entrada 2
+\lang spanish
+\begin_inset Formula $S=\left\langle a_{1},a_{2},a_{3},\cdots,a_{n}\right\rangle $
+\end_inset
+
+, en donde 
+\begin_inset Formula $\forall,$
+\end_inset
+
+a 
+\begin_inset Formula $\in\mathbb{T}$
+\end_inset
+
+ y en 
+\begin_inset Formula $\mathbb{T}$
+\end_inset
+
+ existe una relación de orden parcial 
+\begin_inset Formula $\leq$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -264,13 +281,18 @@ Salidas:
 \begin_layout Enumerate
 
 \lang spanish
-Definición salida 1
-\end_layout
+\begin_inset Formula $S'=\left\langle a'_{1},a'_{2},a'_{3},\cdots,a'_{n}\right\rangle $
+\end_inset
 
-\begin_layout Enumerate
+ en donde 
+\begin_inset Formula $a'_{i}\leq a'_{i+1}$
+\end_inset
 
-\lang spanish
-Definición salida 2
+ y 
+\begin_inset Formula $a'_{i}\in S$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
@@ -891,54 +913,21 @@ Notas de implementación
 \begin_layout Standard
 
 \lang spanish
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Cras porta facilisis ultricies.
- Donec in posuere lacus.
- Maecenas volutpat augue ac tincidunt accumsan.
- In in rhoncus mi, sodales finibus augue.
- Nulla tristique in est nec elementum.
- Sed purus sem, lacinia eget turpis ut, dapibus rutrum felis.
- Sed efficitur venenatis mauris at gravida.
- Nulla finibus rutrum elit eu rutrum.
- Curabitur a felis libero.
+Para la implementación de este algoritmo se hizo uso del lenguaje interpretado
+ Python.
+ En este caso, se nos brindó dicho código que fue escrito por el profesor
+ Leonardo Florez El código para este algoritmo se ubica en la carpeta 
+\begin_inset Formula $‘Código/Taller1–Análisisdealgoritmos/sort/bubble_{s}ort.py’$
+\end_inset
+
+.
 \end_layout
 
 \begin_layout Standard
 
 \lang spanish
-Praesent lacus est, finibus et elementum nec, convallis sed est.
- Cras fermentum laoreet eros sagittis fermentum.
- Donec id augue eget ante pellentesque feugiat et et nisi.
- Ut ornare feugiat tempus.
- Sed iaculis eros nec libero ultrices, vel efficitur tortor imperdiet.
- Aliquam tristique, sapien a commodo rhoncus, neque leo dapibus massa, ac
- ultrices felis tortor in ex.
- Donec ac risus libero.
- Fusce rhoncus diam leo, ornare pellentesque lectus sodales vel.
- Proin scelerisque porttitor elit, nec suscipit erat vestibulum eget.
- Proin hendrerit, arcu eget faucibus pharetra, urna nisi euismod quam, ac
- maximus lacus urna in ante.
- Etiam sit amet semper augue.
- Donec in ultrices ipsum, tristique maximus odio.
- Proin volutpat, quam mattis dictum lobortis, lorem velit rhoncus metus,
- sit amet iaculis tellus ligula quis est.
- Fusce interdum eros ex, et feugiat est euismod et.
- Cras non efficitur neque.
-\end_layout
-
-\begin_layout Standard
-
-\lang spanish
-Lorem ipsum dolor sit amet, consectetur adipiscing elit.
- Cras porta facilisis ultricies.
- Donec in posuere lacus.
- Maecenas volutpat augue ac tincidunt accumsan.
- In in rhoncus mi, sodales finibus augue.
- Nulla tristique in est nec elementum.
- Sed purus sem, lacinia eget turpis ut, dapibus rutrum felis.
- Sed efficitur venenatis mauris at gravida.
- Nulla finibus rutrum elit eu rutrum.
- Curabitur a felis libero.
+La implementación se encuentra entre la línea 11 y la 15.
+ 
 \end_layout
 
 \begin_layout Section
