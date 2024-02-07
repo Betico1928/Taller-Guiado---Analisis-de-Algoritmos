@@ -2437,10 +2437,306 @@ QuickSort
 
 \end_layout
 
+\begin_layout Subsection
+Complejidad
+\end_layout
+
+\begin_layout Subsection
+Invariante
+\end_layout
+
+\begin_layout Subsection
+Notas de Implementación
+\end_layout
+
 \begin_layout Part
 
 \lang spanish
 Comparación de los algoritmos
+\end_layout
+
+\begin_layout Section
+
+\lang spanish
+Ejecución de los algoritmos:
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Para poder realizar estas comparaciones se corrió el programa “main.py”.
+ En este programa podemos comparar los 3 tipos de algortimos y de esta manera,
+ poder realizar una comparación con ayuda de gráficas y los mismos outputs
+ que nos brinda el código.
+ Para poder realizar las pruebas hemos creado un archivo llamado 
+\begin_inset Formula $\mathbf{data.res}$
+\end_inset
+
+ con los siguientes argumentos: 
+\begin_inset Formula 
+\[
+min\char`_{s}=1
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+max\char`_{s}=5000
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+step=100
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+Con esos argumentos fuimos capaces de obtener la siguiente gráfica: 
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+\begin_inset Graphics
+	filename Imágenes/Tiempos de ejecución de algoritmos.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+
+\lang spanish
+En la tabla anterior se puede apreciar de manera interpretativa que para
+ el algoritmo de Bubble Sort, Insertion Sort & Quick Sort.
+ Estos se comportan de manera similar a su complejidad algoritmica en el
+ peor caso; siendo 
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+ para BubbleSort, 
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+ para el InsertionSort y 
+\begin_inset Formula $O(n*log(n))$
+\end_inset
+
+ para el QuickSort.
+\end_layout
+
+\begin_layout Standard
+Ahora, podemos ver que aunque ambos Bubble Sort e Insertion Sort tienen
+ una complejidad asintótica cuadrática (
+\begin_inset Formula $O(n^{2})$
+\end_inset
+
+), la diferencia clave en su rendimiento radica en cómo manejan el intercambio
+ de elementos.
+ 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{En Bubble Sort, se realizan intercambios continuos entre elementos
+ adyacentes hasta que todo el conjunto esté ordenado}
+\end_layout
+
+\end_inset
+
+,lo que puede resultar en un alto número de operaciones incluso en conjuntos
+ parcialmente ordenados.
+ Por otro lado, 
+\begin_inset ERT
+status open
+
+\begin_layout Plain Layout
+
+
+\backslash
+textbf{Insertion Sort construye gradualmente la parte ordenada del conjunto,
+ desplazando elementos solo cuando es necesario para insertar el siguiente
+ elemento en su posición correcta.}
+\end_layout
+
+\end_inset
+
+ Esto implica que Insertion Sort tiende a ser más eficiente, especialmente
+ en conjuntos de datos parcialmente ordenados, ya que puede detenerse temprano
+ en cada iteración si encuentra que un elemento ya está en su lugar correcto,
+ lo que reduce el número total de comparaciones e intercambios en comparación
+ con Bubble Sort.
+\end_layout
+
+\begin_layout Subsection
+BubbleSort
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Imágenes/Output - BubbleSort.png
+	scale 85
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con un 
+\begin_inset Formula $R^{2}=1$
+\end_inset
+
+, podemos afirmar que el modelo de la regresión se ajusta a 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+ y que la variabilidad es explicada por las variables del modelo.
+ El modelo explica toda la variabilidad en la variable dependiente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Imágenes/Gráfica - BubbleSort.png
+	scale 80
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Ya con la gráfica podemos ver la similitud de la simulación con la función
+ 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+.
+\end_layout
+
+\begin_layout Subsection
+InsertionSort
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Imágenes/Output - InsertionSort.png
+	scale 80
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con un 
+\begin_inset Formula $R^{2}=1$
+\end_inset
+
+, podemos afirmar que el modelo de la regresión se ajusta a 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+ y que la variabilidad es explicada por las variables del modelo.
+ El modelo explica toda la variabilidad en la variable dependiente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Imágenes/Gráfica - InsertionSort.png
+	scale 75
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+De manera similar al Bubble Sort, vemos la concordancia de la simulación
+ con la función 
+\begin_inset Formula $n^{2}$
+\end_inset
+
+.
+ Para este caso se ve un poco más de variación, pero esta es insignificante.
+\end_layout
+
+\begin_layout Subsection
+QuickSort
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Imágenes/Output - QuickSort.png
+	scale 85
+	rotateOrigin center
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Con un 
+\begin_inset Formula $R^{2}=0.996$
+\end_inset
+
+, podemos afirmar que el modelo de la regresión se ajusta de manera extremadamen
+te precisa a 
+\begin_inset Formula $n*log(n)$
+\end_inset
+
+ y que la variabilidad es explicada en gran parte por las variables del
+ modelo.
+ El modelo explica casi toda la variabilidad en la variable dependiente.
+\end_layout
+
+\begin_layout Standard
+\begin_inset Graphics
+	filename Imágenes/Gráfica - QuickSort.png
+	scale 75
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+En este caso, se observa mayor variabilidad pequeña pero suficiente para
+ que 
+\begin_inset Formula $R^{2}\neq1.00$
+\end_inset
+
+.
+ De igual manera, vemos que esta no altera el comportamiento del experimento
+ con el 
+\begin_inset Formula $n*log(n)$
+\end_inset
+
+ en la regresión, por lo cual se puede explicar el 
+\begin_inset Formula $R^{2}=0.996$
+\end_inset
+
+ el cual es bastante preciso.
 \end_layout
 
 \end_body
