@@ -2484,7 +2484,7 @@ log_{2}2=1
 \end_layout
 
 \begin_layout Itemize
-Encontrar usando las fórmulas para este caso (Caso #2:
+Encontrar usando las fórmulas para este caso (Caso #2):
 \begin_inset Formula 
 \[
 f(n)\in\theta(n^{log_{2}2}log_{2}^{0}n)\Longrightarrow f(n)\in\theta(n^{log_{2}2}log_{2}^{0+1}n)
@@ -2534,7 +2534,15 @@ Teniendo en cuenta ese contexto podemos concluir que la función de recurrencia
 \begin_layout Standard
 \begin_inset Formula 
 \[
-T(n)=2T(n-1)+O(n)\Longrightarrow O(n^{2}
+T(n)=2T(n-1)+O(n)\Longrightarrow O(n^{2})
+\]
+
+\end_inset
+
+
+\begin_inset Formula 
+\[
+T(n)=\frac{n*(n-1)}{2}\Longrightarrow n^{2}
 \]
 
 \end_inset
@@ -2544,6 +2552,145 @@ T(n)=2T(n-1)+O(n)\Longrightarrow O(n^{2}
 
 \begin_layout Subsection
 Invariante
+\end_layout
+
+\begin_layout Standard
+Al analizar el algoritmo de QuickSort, identificamos que el invariante crítico
+ reside en el procedimiento de partición.
+ Este procedimiento presenta un ciclo que define la ordenación de la secuencia.
+\end_layout
+
+\begin_layout Standard
+El invariante fundamental en QuickSort establece que, después de cada operación
+ de partición, el pivote ocupa su posición final en la lista ordenada.
+ Formalmente, sea 
+\begin_inset Formula $S(i,j)$
+\end_inset
+
+ la proposición que indica que todos los elementos en la sublista 
+\begin_inset Formula $S'[1:pivote-1]$
+\end_inset
+
+ son menores o iguales al pivote, y todos los elementos en la sublista a
+ 
+\begin_inset Formula $S'[pivote:fin]$
+\end_inset
+
+ son mayores o iguales al pivote.
+ Entonces, el invariante puede expresarse como: 
+\begin_inset Formula 
+\[
+S'(1,pivotIndex−1)\leq pivote\leq S'(pivotIndex+1,fin)
+\]
+
+\end_inset
+
+
+\end_layout
+
+\begin_layout Standard
+Donde 
+\begin_inset Formula $pivotIndex$
+\end_inset
+
+ es la posición final del pivote después de la partición, y 
+\begin_inset Formula $a[i]$
+\end_inset
+
+ es el elemento en dicha posición.
+ Este invariante garantiza que, en cada paso, la lista se divide en dos
+ sublistas que cumplen con las condiciones de orden en relación con el pivote
+ (los menores a la izquierda y los mayores a la derecha).
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\bar under
+\lang spanish
+Inicio
+\series default
+\bar default
+: Al comenzar el algoritmo, antes de realizar cualquier partición, el invariante
+ se establece.
+ Sea 
+\begin_inset Formula $a[1:n]$
+\end_inset
+
+ la lista completa a ordenar, y 
+\begin_inset Formula $i$
+\end_inset
+
+ la posición del pivote antes de realizar la primera partición.
+ En este momento, el invariante es: 
+\begin_inset Formula $P(0,i−1)∧P(i+1,n)∧a[i]=pivote$
+\end_inset
+
+ Donde 
+\begin_inset Formula $P(0,i−1)$
+\end_inset
+
+ y 
+\begin_inset Formula $P(i+1,n)$
+\end_inset
+
+ indican que las sublistas a la izquierda y a la derecha del pivote, respectivam
+ente, están inicialmente vacías.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\bar under
+\lang spanish
+Avance
+\series default
+\bar default
+: Después de realizar una partición en la posición 
+\begin_inset Formula $i$
+\end_inset
+
+, el invariante se mantiene.
+ Se elige un pivote y se reorganizan los elementos de la lista de modo que
+ los elementos a la izquierda del pivote sean menores o iguales, y los elementos
+ a la derecha sean mayores o iguales.
+ El invariante después del avance es: 
+\begin_inset Formula $P(0,i−1)∧P(i+1,n)∧a[i]=pivote$
+\end_inset
+
+ Donde 
+\begin_inset Formula $P(0,i−1)$
+\end_inset
+
+ y 
+\begin_inset Formula $P(i+1,n)$
+\end_inset
+
+ indican que las sublistas a la izquierda y a la derecha del pivote, respectivam
+ente, cumplen con las condiciones de orden establecidas por el pivote después
+ de la partición.
+\end_layout
+
+\begin_layout Itemize
+
+\series bold
+\bar under
+\lang spanish
+Terminación: 
+\series default
+\bar default
+Cuando el algoritmo termina, todas las particiones han sido realizadas y
+ la lista está completamente ordenada.
+ En este punto, el invariante final es: 
+\begin_inset Formula 
+\[
+P(1,n)
+\]
+
+\end_inset
+
+ Esto significa que toda la lista cumple con las condiciones de orden, ya
+ que la lista se ha dividido y ordenado correctamente en cada partición.
 \end_layout
 
 \begin_layout Subsection
