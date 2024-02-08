@@ -2563,24 +2563,20 @@ Al analizar el algoritmo de QuickSort, identificamos que el invariante crítico
 \begin_layout Standard
 El invariante fundamental en QuickSort establece que, después de cada operación
  de partición, el pivote ocupa su posición final en la lista ordenada.
- Formalmente, sea 
-\begin_inset Formula $S(i,j)$
-\end_inset
-
- la proposición que indica que todos los elementos en la sublista 
+ Formalmente, en la sublista 
 \begin_inset Formula $S'[1:pivote-1]$
 \end_inset
 
  son menores o iguales al pivote, y todos los elementos en la sublista a
  
-\begin_inset Formula $S'[pivote:fin]$
+\begin_inset Formula $S'[pivote+1:fin]$
 \end_inset
 
  son mayores o iguales al pivote.
  Entonces, el invariante puede expresarse como: 
 \begin_inset Formula 
 \[
-S'(1,pivotIndex−1)\leq pivote\leq S'(pivotIndex+1,fin)
+S'(1,pivotIndex−1)<pivote<S'(pivotIndex+1,fin)
 \]
 
 \end_inset
@@ -2593,11 +2589,7 @@ Donde
 \begin_inset Formula $pivotIndex$
 \end_inset
 
- es la posición final del pivote después de la partición, y 
-\begin_inset Formula $a[i]$
-\end_inset
-
- es el elemento en dicha posición.
+ es la posición final del pivote después de la partición.
  Este invariante garantiza que, en cada paso, la lista se divide en dos
  sublistas que cumplen con las condiciones de orden en relación con el pivote
  (los menores a la izquierda y los mayores a la derecha).
@@ -2614,7 +2606,7 @@ Inicio
 : Al comenzar el algoritmo, antes de realizar cualquier partición, el invariante
  se establece.
  Sea 
-\begin_inset Formula $a[1:n]$
+\begin_inset Formula $S[1:n]$
 \end_inset
 
  la lista completa a ordenar, y 
